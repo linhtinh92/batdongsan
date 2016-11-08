@@ -15,6 +15,7 @@ add_theme_support( 'menus' );
 add_action('wp_enqueue_scripts', 'bds_register_style');
 function bds_register_style()
 {
+    
     $cssUrl = get_template_directory_uri() . '/css/';
     wp_register_style('bds_theme_bootstrap', $cssUrl . 'bootstrap.min.css', array(), '3.3');
     wp_enqueue_style('bds_theme_bootstrap');
