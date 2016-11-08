@@ -1,0 +1,19 @@
+.tab_product{background:#EDEDED;margin-top:20px;}
+#tabsholder2{position:relative;margin-bottom:15px;}
+ul.tabs {
+margin:0;overflow:hidden;padding:5px;
+background:#f6f6f6;border-radius:5px;
+}
+ul.tabs li {
+list-style-type:none;display:block;cursor:pointer;
+float:left;margin-right:3px;padding:0 30px;
+height:30px;line-height:30px;font-size:12px;border-radius:5px;
+color:#000;font-weight:bold;position:relative;border:1px solid #cecece;
+}
+ul.tabs li:hover,ul.tabs li.current{font-weight:bold;color:#ef9d38}
+.tabscontent {
+padding:0;color:#000;overflow:hidden;
+min-height:125px;display:none;background:#fff;
+}
+.tabscontent table{border-collapse:collapse;}
+.tabscontent table tr td{padding:5px 10px;}

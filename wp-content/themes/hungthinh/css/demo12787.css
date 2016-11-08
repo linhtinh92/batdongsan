@@ -1,0 +1,108 @@
+.slideproduct{width:100%;margin-bottom:15px;}
+.panel {float:right;width:25%;overflow:hidden;border:none !important;-webkit-box-shadow:none;}
+.panel #leftcontrol,.panel #rightcontrol{text-align:center;opacity:0.5;}
+.panel #leftcontrol a,.panel #rightcontrol a{display:block;}
+.panel #leftcontrol:hover,.panel #rightcontrol:hover{opacity:1;}
+ul.exposureThumbs {padding:0;margin:0;list-style-type:none;}
+ul.exposureThumbs li {
+	padding:5px 0;height:110px;
+	text-align:center;display:none;
+}
+
+ul.exposureThumbs li img {
+	cursor:pointer;border:1px solid #cfcfcf;height:108px;width:158px;
+}
+
+ul.exposureThumbs li.last {
+	margin:0;	
+}
+.slideroot{
+	width:75%;float:left;
+	height:400px;text-align:center;
+}
+.exposureTarget {
+	background-color:#111;	
+	background-image:url(../images/loading.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	padding:0;margin:0 auto;
+	position:relative;
+	overflow:hidden; 
+}
+
+.exposureWrapper {
+	position:absolute; 
+	top:0; width:100%;height:100%;
+	left:0;
+}
+
+.exposureWrapper img {
+	cursor:pointer;
+	position:absolute;
+	top:0;max-width:100%;max-height:400px;
+	left:0;
+}
+
+.exposureLoaded {
+	background-image:none;	
+}
+
+.exposureData {
+	position:absolute;
+ 	left:0;display:none;
+ 	right:0;
+ 	bottom:-2000px;
+	height:60px;
+	padding:7px;
+	color:#fff;
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	display:none;
+}
+
+/* In this demo we are using thumbs with fixed size */
+ul.exposureThumbs li {
+	width:100%;
+	height:110px;
+}
+
+.exposureSlideshowControls a,
+.exposureControls span,
+.exposureControls a {
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+	font-size:11px;
+	padding:8px;
+	background-color:#555;
+	display:block;
+	float:left;
+}
+
+.exposureSlideshowControls a {
+	float:right;	
+}
+
+.exposureSlideshowControls a,
+.exposureControls a {
+	color:#ccc;
+	text-decoration:none;
+	outline:none;
+}
+
+.exposureSlideshowControls a:active,
+.exposureSlideshowControls a:hover,
+.exposureControls a:active,
+.exposureControls a:hover {
+	background-color:#444;
+	color:#ddd;
+}
+
+.exposurePaging .active {
+	color:#fff;
+	background-color:#111;	
+}
+.slideshow-detail{margin-bottom:15px;display:none;}
+@media (max-width: 991px){
+	.slideproduct{display:none !important;}
+	.slideshow-detail{display:block;}
+}
